@@ -1,0 +1,3 @@
+[submodule "PCBs/Kicad-Files/Wemos Lolin32 SD_MMC PN5180/kicad-library"]
+	path = PCBs/Kicad-Files/Wemos Lolin32 SD_MMC PN5180/kicad-library
+	url = https://github.com/pauls-3d-things/kicad-library.git

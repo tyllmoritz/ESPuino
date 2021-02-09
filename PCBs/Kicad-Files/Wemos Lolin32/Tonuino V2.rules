@@ -1,0 +1,119 @@
+
+(rules PCB Tonuino V2
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 292)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 300.2 (type default_PWR))
+    (clear 50.0 (type smd_smd))
+    (clear 300.2 (type smd_PWR))
+    (clear 300.2 (type "kicad_default"_PWR))
+    (clear 300.2 (type GND_PWR))
+    (clear 300.2 (type PWR_PWR))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-GND" "Via[0-1]_800:400_um" GND
+  )
+  (via 
+    "Via[0-1]_800:400_um-PWR" "Via[0-1]_800:400_um" PWR
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    GND "Via[0-1]_800:400_um-GND"
+  )
+  (via_rule
+    PWR "Via[0-1]_800:400_um-PWR"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "NEO_DI" DIN BCLK LRC HEADPHONE "Net-(J3-Pad2)" "ROTENC_BUT" "ROTENC_CLR"
+    "ROTENC_DT" "MISO_RFID" "MOSI_RFID" "SCK_RFID" "CS_RFID" "BUT_PREV" "BUT_PPLAY" "BUT_NEXT"
+    "MISO_SD" "SCK_SD" "MOSI_SD" "CS_SD" "Net-(Q1-Pad1)" "Net-(Q1-Pad2)" "Net-(Q2-Pad3)" "Net-(R1-Pad2)"
+    "Net-(U1-Pad35)" "Net-(U1-Pad33)" "Net-(U1-Pad29)" "Net-(U1-Pad24)" "Net-(U1-Pad23)" "Net-(U1-Pad19)" "Net-(U1-Pad18)" "Net-(U1-Pad17)"
+    "Net-(U1-Pad15)" "Net-(U1-Pad4)" "Net-(U1-Pad3)" "Net-(U1-Pad2)" GAIN "Net-(J5-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class GND
+    GND
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class PWR
+    "SW_POWER3.3"
+    (clearance_class PWR)
+    (via_rule PWR)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

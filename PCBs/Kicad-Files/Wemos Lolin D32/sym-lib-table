@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Tonuino-D32-rescue)(type Legacy)(uri "${KIPRJMOD}/Tonuino D32-rescue.lib")(options "")(descr ""))
+)

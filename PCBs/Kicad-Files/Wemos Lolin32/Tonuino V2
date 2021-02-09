@@ -1,0 +1,35 @@
+Source,/Users/torsten/Documents/KiCad/Tonuino V2/Tonuino V2.sch
+Kicad Rev,Eeschema (5.1.8-0-10_14)
+Generated Date,2020 December 06, Sunday 17:43:03
+
+Title,Tonuino-ESP32-I2S Lolin32
+Company,Not Set
+Revision,1.0
+Date Issue,2020-12-06
+
+Reference,Value,Library,Library Ref
+J1,Neopixel,Connector,Conn_01x03_Male
+R3,100k,Device,R
+Q1,IRF530NPbF,Transistor_FET,IRF540N
+R1,1k,Device,R
+Q2,NDP6020P,Device,Q_PMOS_GDS
+R2,10k,Device,R
+J3,RotEncoder,Connector,Conn_01x05_Male
+U1,Wemos Lolin32,symbols,Lolin32
+J2,to-Headphone,Connector_Generic,Conn_02x03_Odd_Even
+J8,uSD-Reader,Connector,Conn_01x06_Female
+J7,MAX98357a,Connector,Conn_01x07_Female
+R4,100k,Device,R
+H1,MountingHole,Mechanical,MountingHole
+H4,MountingHole,Mechanical,MountingHole
+H3,MountingHole,Mechanical,MountingHole
+H2,MountingHole,Mechanical,MountingHole
+J4,Next-Bt,Connector_Generic,Conn_01x02
+J9,PPlay-Bt,Connector_Generic,Conn_01x02
+J6,Prev-Bt,Connector_Generic,Conn_01x02
+J5,RFID1,Connector_Generic,Conn_01x03
+J10,RFID2,Connector_Generic,Conn_01x03
+Rdiv1,130k,Device,R
+Rdiv2,390k,Device,R
+J12,toLolin,Connector_Generic,Conn_01x02
+J11,Battery,Connector_Generic,Conn_01x02
