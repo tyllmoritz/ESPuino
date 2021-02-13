@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Tonuino-ESP32-I2S Lolin32"
+Title "ESPuino Lolin32"
 Date "2020-12-06"
 Rev "1.0"
 Comp ""
@@ -132,7 +132,7 @@ Wire Wire Line
 	6700 3050 8350 3050
 NoConn ~ 5200 4150
 $Comp
-L symbols:Lolin32 U1
+L Wemos_Lolin32-rescue:Lolin32-symbols U1
 U 1 1 5F3628D0
 P 5700 3700
 F 0 "U1" H 5950 4897 60  0000 C CNN
@@ -588,7 +588,7 @@ U 1 1 5FECE190
 P 1900 2650
 F 0 "C1" H 1900 2850 50  0000 L CNN
 F 1 "10uF" H 1900 2400 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm" H 1938 2500 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 1938 2500 50  0001 C CNN
 F 3 "~" H 1900 2650 50  0001 C CNN
 	1    1900 2650
 	1    0    0    -1  

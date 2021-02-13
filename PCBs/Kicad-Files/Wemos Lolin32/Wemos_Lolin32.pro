@@ -15,7 +15,6 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Tonuino V2.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Wemos_Lolin32-rescue)(type Legacy)(uri ${KIPRJMOD}/Wemos_Lolin32-rescue.lib)(options "")(descr ""))
+)

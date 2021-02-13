@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.8-0-10_14)")
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5+dfsg1-2build2)
 
   (general
     (thickness 1.6)
@@ -1692,7 +1692,7 @@
   )
   (gr_line (start 95.25 114.3) (end 151 114.3) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 95.25 21.59) (end 151 21.59) (layer Edge.Cuts) (width 0.15))
-  (gr_text "Tonuino Lolin32 3.3V rev2" (at 119.01 112.38) (layer B.SilkS)
+  (gr_text "ESPuino Lolin32 3.3V rev2" (at 119.01 112.38) (layer B.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
   (gr_text GND (at 143.811 98.925) (layer F.SilkS)
@@ -2080,7 +2080,7 @@
       )
     )
   )
-  (zone (net 34) (net_name GND) (layer F.Cu) (tstamp 5FCD03A6) (hatch edge 0.508)
+  (zone (net 34) (net_name GND) (layer F.Cu) (tstamp 602740B0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -2652,7 +2652,7 @@
       )
     )
   )
-  (zone (net 34) (net_name GND) (layer B.Cu) (tstamp 5FCD03A3) (hatch edge 0.508)
+  (zone (net 34) (net_name GND) (layer B.Cu) (tstamp 602740AD) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
