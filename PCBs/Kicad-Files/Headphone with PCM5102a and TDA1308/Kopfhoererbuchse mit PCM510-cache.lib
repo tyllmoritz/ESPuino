@@ -126,11 +126,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# KopfhoÃàrerbuchse-mit-PCM5102A-rescue_AudioJack3_Dual_Switch-Connector
+# Kopfhörerbuchse-mit-PCM5102A-rescue_AudioJack3_Dual_Switch-Connector-Kopfhörerbuchse-mit-PCM5102A-rescue
 #
-DEF KopfhoÃàrerbuchse-mit-PCM5102A-rescue_AudioJack3_Dual_Switch-Connector J 0 20 Y Y 2 F N
+DEF Kopfhörerbuchse-mit-PCM5102A-rescue_AudioJack3_Dual_Switch-Connector-Kopfhörerbuchse-mit-PCM5102A-rescue J 0 20 Y Y 2 F N
 F0 "J" 0 450 50 H V C CNN
-F1 "KopfhoÃàrerbuchse-mit-PCM5102A-rescue_AudioJack3_Dual_Switch-Connector" 0 350 50 H V C CNN
+F1 "Kopfhörerbuchse-mit-PCM5102A-rescue_AudioJack3_Dual_Switch-Connector-Kopfhörerbuchse-mit-PCM5102A-rescue" 0 350 50 H V C CNN
 F2 "" -50 0 50 H I C CNN
 F3 "" -50 0 50 H I C CNN
 $FPLIST
@@ -166,11 +166,11 @@ X TN1 TN2 200 -300 100 L 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
-# KopfhoÃàrerbuchse-mit-PCM5102A-rescue_PCM5102A-Audio
+# Kopfhörerbuchse-mit-PCM5102A-rescue_PCM5102A-Audio-Kopfhörerbuchse-mit-PCM5102A-rescue
 #
-DEF KopfhoÃàrerbuchse-mit-PCM5102A-rescue_PCM5102A-Audio U 0 40 Y Y 1 F N
+DEF Kopfhörerbuchse-mit-PCM5102A-rescue_PCM5102A-Audio-Kopfhörerbuchse-mit-PCM5102A-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 -400 50 H V C CNN
-F1 "KopfhoÃàrerbuchse-mit-PCM5102A-rescue_PCM5102A-Audio" 0 -1050 50 H V C CNN
+F1 "Kopfhörerbuchse-mit-PCM5102A-rescue_PCM5102A-Audio-Kopfhörerbuchse-mit-PCM5102A-rescue" 0 -1050 50 H V C CNN
 F2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -223,7 +223,7 @@ F0 "Q" 200 75 50 H V L CNN
 F1 "Transistor_FET_IRLML6402" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
-ALIAS VP0610T BSS84 NTR2101P BSS83P Si2319CDS IRLML6401 IRLML6402 DMG2301L AO3401A IRLML9301 IRLML5203 Si2371EDS TSM2301ACX FDN340P
+ALIAS VP0610T BSS84 NTR2101P BSS83P Si2319CDS IRLML6402 DMG2301L AO3401A IRLML9301 IRLML5203 Si2371EDS
 $FPLIST
  SOT?23*
 $ENDFPLIST

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/Users/willmar/Documents/Kicad/Kicadprojekts/Tonuino Kopfhörerbuchse PCM5102A/KopfhoÃàrerbuchse mit PCM5102A.sch</source>
+    <source>/Users/willmar/Documents/Kicad/Kicadprojekts/Kopfhörerbuchse PCM5102A/Kopfhörerbuchse mit PCM5102A.sch</source>
     <date>Sonntag, 14. Juni 2020 um 12:11:27</date>
     <tool>Eeschema (5.1.5-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Kopfhörerplatine für Tonuino mit ESP32</title>
+        <title>Kopfhörerplatine für ESPuino</title>
         <company>Willmar Priewe</company>
         <rev/>
         <date>20.04.202</date>
-        <source>KopfhoÃàrerbuchse mit PCM5102A.sch</source>
+        <source>Kopfhörerbuchse mit PCM5102A.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -606,7 +606,7 @@
       <uri>/Library/Application Support/kicad/library/Jumper.lib</uri>
     </library>
     <library logical="KopfhoÃàrerbuchse-mit-PCM5102A-rescue">
-      <uri>/Users/willmar/Documents/Kicad/Kicadprojekts/Tonuino Kopfhörerbuchse PCM5102A/KopfhoÃàrerbuchse mit PCM5102A-rescue.lib</uri>
+      <uri>/Users/willmar/Documents/Kicad/Kicadprojekts/Kopfhörerbuchse PCM5102A/KopfhoÃàrerbuchse mit PCM5102A-rescue.lib</uri>
     </library>
     <library logical="Mechanical">
       <uri>/Library/Application Support/kicad/library/Mechanical.lib</uri>

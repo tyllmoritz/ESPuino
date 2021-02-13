@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Kopfhoererbuchse PCM5102A")(type KiCad)(uri "${KIPRJMOD}/Kopfhoererbuchse PCM5102A.pretty")(options "")(descr ""))
+)

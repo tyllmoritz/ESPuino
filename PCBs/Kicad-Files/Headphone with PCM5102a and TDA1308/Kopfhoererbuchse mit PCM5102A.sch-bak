@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "I2S-headphone-PCB for Tonuino"
+Title "I2S-headphone-PCB for ESPuino"
 Date "2020-11-19"
 Rev ""
 Comp ""
@@ -14,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L KopfhoÃàrerbuchse-mit-PCM5102A-rescue:AudioJack3_Dual_Switch-Connector J2
+L Kopfhoererbuchse-mit-PCM5102A-rescue:AudioJack3_Dual_Switch-Connector-Kopfhörerbuchse-mit-PCM5102A J2
 U 1 1 5E774924
 P 8550 4150
 F 0 "J2" H 8220 4150 50  0000 R CNN
 F 1 "AudioJack3_Dual_Switch" H 8220 4059 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_Cliff_Horizontal" H 8500 4150 50  0001 C CNN
+F 2 "Kopfhoererbuchse PCM5102A:Jack_3.5mm_Cliff_Horizontal" H 8500 4150 50  0001 C CNN
 F 3 "~" H 8500 4150 50  0001 C CNN
 	1    8550 4150
 	-1   0    0    1   
@@ -443,7 +443,7 @@ F 3 "~" H 2750 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L KopfhoÃàrerbuchse-mit-PCM5102A-rescue:PCM5102A-Audio U1
+L Kopfhoererbuchse-mit-PCM5102A-rescue:PCM5102A U1
 U 1 1 5ED93771
 P 2800 3150
 F 0 "U1" H 2800 4275 50  0000 C CNN

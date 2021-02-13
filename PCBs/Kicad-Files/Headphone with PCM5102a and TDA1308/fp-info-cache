@@ -1,0 +1,71 @@
+16129133962200
+Kopfhoererbuchse PCM5102A
+CP_Radial_D4.0mm_P1.50mm
+CP, Radial series, Radial, pin pitch=1.50mm, , diameter=4mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 1.50mm  diameter 4mm Electrolytic Capacitor
+0
+2
+2
+Kopfhoererbuchse PCM5102A
+CP_Radial_D6.3mm_P2.50mm
+CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor
+0
+2
+2
+Kopfhoererbuchse PCM5102A
+C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+Kopfhoererbuchse PCM5102A
+Jack_3.5mm_Cliff_Horizontal
+NMJ6HCD2, TRS 1/4\\\\\\\\ (http://www.neutrik.com/zoolu-website/media/download/2890/Drawing+NMJ6HCD2)
+NMJ6HCD2 TRS stereo jack connector
+0
+6
+6
+Kopfhoererbuchse PCM5102A
+MountingHole_3.2mm_M3
+Mounting Hole 3.2mm, no annular, M3
+mounting hole 3.2mm no annular m3
+0
+0
+0
+Kopfhoererbuchse PCM5102A
+PinHeader_2x03_P2.54mm_Vertical_large
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+6
+6
+Kopfhoererbuchse PCM5102A
+R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
+Kopfhoererbuchse PCM5102A
+SO-8_5.3x6.2mm_P1.27mm
+8-Lead Plastic Small Outline, 5.3x6.2mm Body (http://www.ti.com.cn/cn/lit/ds/symlink/tl7705a.pdf)
+SOIC 1.27
+0
+8
+8
+Kopfhoererbuchse PCM5102A
+SOT-23
+SOT-23, Standard
+SOT-23
+0
+3
+3
+Kopfhoererbuchse PCM5102A
+TSSOP-20_4.4x6.5mm_P0.65mm
+20-Lead Plastic Thin Shrink Small Outline (ST)-4.4 mm Body [TSSOP] (see Microchip Packaging Specification 00000049BS.pdf)
+SSOP 0.65
+0
+20
+20
