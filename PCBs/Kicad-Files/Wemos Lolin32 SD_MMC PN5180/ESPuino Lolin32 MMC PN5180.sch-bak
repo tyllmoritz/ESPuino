@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L module:Lolin32 U1
+L ESPuino-Lolin32-MMC-PN5180-rescue:Lolin32-module U1
 U 1 1 5FF660DB
 P 5550 3600
 F 0 "U1" H 5800 4797 60  0000 C CNN
@@ -61,7 +61,7 @@ L Transistor_FET:IRF540N Q1
 U 1 1 5FF69FCC
 P 8450 3950
 F 0 "Q1" H 8654 3996 50  0000 L CNN
-F 1 "IRF530N" H 8654 3905 50  0000 L CNN
+F 1 "IRL3103" H 8654 3905 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8700 3875 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 8450 3950 50  0001 L CNN
 	1    8450 3950

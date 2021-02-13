@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ESPuino-Lolin32-MMC-PN5180-rescue)(type Legacy)(uri "${KIPRJMOD}/ESPuino Lolin32 MMC PN5180-rescue.lib")(options "")(descr ""))
+)

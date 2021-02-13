@@ -15,7 +15,6 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Tonuino Lolin32 MMC PN5180.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

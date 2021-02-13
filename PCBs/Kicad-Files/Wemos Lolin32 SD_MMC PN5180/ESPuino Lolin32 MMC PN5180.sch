@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L module:Lolin32 U1
+L ESPuino-Lolin32-MMC-PN5180-rescue:Lolin32-module U1
 U 1 1 5FF660DB
 P 5550 3600
 F 0 "U1" H 5800 4797 60  0000 C CNN

@@ -1,9 +1,9 @@
-(pcb "/Users/torsten/Documents/KiCad/Tonuino Lolin32 MMC PN5180/Tonuino Lolin32 MMC PN5180/Tonuino Lolin32 MMC PN5180.dsn"
+(pcb "/home/work/git/ESPuino/PCBs/Kicad-Files/Wemos Lolin32 SD_MMC PN5180/ESPuino Lolin32 MMC PN5180.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "(5.1.8-0-10_14)")
+    (host_version "5.1.5+dfsg1-2build2")
   )
   (resolution um 10)
   (unit um)
@@ -24,6 +24,14 @@
       (path pcb 0  151000 -114300  95250 -114300  95250 -21590  151000 -21590
             151000 -114300)
     )
+    (plane GND (polygon F.Cu 0  151130 -114300  95250 -114300  95250 -21590  151130 -21590
+            151130 -114300))
+    (plane GND (polygon B.Cu 0  151130 -114300  95250 -114300  95250 -21590  151130 -21590
+            151130 -114300))
+    (keepout "" (polygon F.Cu 0  134620 -47625  108585 -47625  108585 -38735  134620 -38735
+            134620 -47625))
+    (keepout "" (polygon B.Cu 0  134620 -47625  108585 -47625  108585 -38735  134620 -38735
+            134620 -47625))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -34,7 +42,7 @@
   )
   (placement
     (component Capacitor_THT:CP_Radial_D4.0mm_P2.00mm
-      (place C1 112512 -91079.3 front 270 (PN 10uF))
+      (place C1 112512 -91079.3 front 270 (PN 10µF))
     )
     (component MountingHole:MountingHole_3.2mm_M3
       (place H1 145415 -26670 front 0 (PN MountingHole))
@@ -45,14 +53,14 @@
       (place H4 100330 -26670 front 0 (PN MountingHole))
     )
     (component "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
-      (place J1 107432 -109367 front 0 (PN Battery))
+      (place J1 107432 -109367 front 0 (PN "to LiPo-battery"))
       (place J8 105400 -36215.3 front 270 (PN Reset))
-      (place J10 105400 -57551.3 front 270 (PN Prev_Bt))
+      (place J10 105400 -57551.3 front 270 (PN Previous))
     )
     (component "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical::1"
       (place J2 107432 -103017 front 0 (PN "to Lolin"))
-      (place J9 105273 -73045.3 front 270 (PN Next_Bt))
-      (place J11 105400 -65171.3 front 270 (PN PPlay_Bt))
+      (place J9 105273 -73045.3 front 270 (PN Next))
+      (place J11 105400 -65171.3 front 270 (PN PPlay))
     )
     (component "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical"
       (place J3 139334 -36601.4 front 0 (PN to_Headphone))
@@ -74,18 +82,18 @@
       (place JP1 125720 -51709.3 front 0 (PN Jumper_NC_Dual))
     )
     (component "Package_TO_SOT_THT:TO-220-3_Vertical"
-      (place Q1 138405 -59319.2 front 0 (PN IRF540N))
+      (place Q1 138405 -59319.2 front 0 (PN IRL3103))
     )
     (component "Package_TO_SOT_THT:TO-220-3_Vertical::1"
       (place Q2 138405 -51277.5 front 0 (PN NDP6020P))
     )
     (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
-      (place R1 124704 -90571.3 front 180 (PN 130k))
+      (place R1 124704 -90571.3 front 180 (PN rdiv1))
       (place R5 118369 -68686.7 front 0 (PN 10k))
       (place R7 118369 -66299.1 front 0 (PN 10k))
     )
     (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal::1
-      (place R2 124704 -93111.3 front 180 (PN 390k))
+      (place R2 124704 -93111.3 front 180 (PN rdiv2))
       (place R3 118354 -63901.3 front 0 (PN 100k))
       (place R4 125974 -71074.3 front 180 (PN 1k))
       (place R6 137119 -54295 front 0 (PN 100k))
@@ -94,7 +102,7 @@
       (place U1 119191 -58007.3 front 0 (PN Lolin32))
     )
     (component "Connector_JST:JST_PH_B10B-PH-K_1x10_P2.00mm_Vertical"
-      (place J7 139045 -63789.6 front 270 (PN RFID))
+      (place J7 139045 -63789.6 front 270 (PN "RFID (PN5180)"))
     )
   )
   (library
@@ -981,10 +989,8 @@
     )
     (class kicad_default "" BUT_NEXT BUT_PPLAY BUT_PREV EN HEADPHONE I2S_BCLK
       I2S_DOUT I2S_LRC MMC_MISO MMC_MOSI MMC_SCK NEOPIXEL "Net-(C1-Pad1)"
-      "Net-(C1-Pad2)" "Net-(J12-Pad5)" "Net-(J4-Pad4)" "Net-(J6-Pad2)" "Net-(J7-Pad1)"
-      "Net-(Q1-Pad1)" "Net-(Q1-Pad2)" "Net-(Q2-Pad3)" "Net-(R4-Pad2)" "Net-(U1-Pad15)"
-      "Net-(U1-Pad17)" "Net-(U1-Pad23)" "Net-(U1-Pad24)" "Net-(U1-Pad29)"
-      "Net-(U1-Pad33)" RFID_BUSY RFID_CS RFID_IRQ RFID_MISO RFID_MOSI RFID_RST
+      "Net-(C1-Pad2)" "Net-(J4-Pad4)" "Net-(J7-Pad1)" "Net-(Q1-Pad1)" "Net-(Q1-Pad2)"
+      "Net-(R4-Pad2)" RFID_BUSY RFID_CS RFID_IRQ RFID_MISO RFID_MOSI RFID_RST
       RFID_SCK ROTENC_BUT ROTENC_CLK ROTENC_DT RX TX VBAT
       (circuit
         (use_via Via[0-1]_800:400_um)
@@ -1005,5 +1011,202 @@
     )
   )
   (wiring
+    (wire (path B.Cu 250  112512 -91079.3  112512 -92004.6)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path B.Cu 250  107432 -103017  107432 -96824.4  112252 -92004.6  112512 -92004.6)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path F.Cu 250  107432 -103017  107432 -109367)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path B.Cu 250  112512 -91079.3  113437 -91079.3)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path B.Cu 250  117084 -90571.3  113945 -90571.3  113437 -91079.3)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path F.Cu 250  109432 -103017  109432 -109367)(net "Net-(C1-Pad2)")(type protect))
+    (wire (path F.Cu 250  112512 -93079.3  109432 -96159.3  109432 -103017)(net "Net-(C1-Pad2)")(type protect))
+    (wire (path B.Cu 250  117084 -93111.3  112544 -93111.3  112512 -93079.3)(net "Net-(C1-Pad2)")(type protect))
+    (wire (path B.Cu 250  119497 -36596.3  120672 -36596.3  120672 -36963.6  121480 -37771.7
+            138164 -37771.7  139334 -36601.4)(net I2S_DOUT)(type protect))
+    (wire (path F.Cu 250  119497 -36596.3  118322 -36596.3)(net I2S_DOUT)(type protect))
+    (wire (path F.Cu 250  110301 -68167.3  110301 -67080  110845 -67080  112412 -65512.1
+            112412 -36896.6  113888 -35421  117514 -35421  118322 -36228.9
+            118322 -36596.3)(net I2S_DOUT)(type protect))
+    (wire (path B.Cu 250  116957 -36596.3  118132 -36596.3  118132 -36963.6  120310 -39141.4
+            139334 -39141.4)(net I2S_BCLK)(type protect))
+    (wire (path F.Cu 250  110301 -73247.3  110301 -72160  110845 -72160  116957 -66047.6
+            116957 -36596.3)(net I2S_BCLK)(type protect))
+    (wire (path B.Cu 250  114417 -36596.3  115592 -36596.3  115592 -36963.6  120310 -41681.4
+            139334 -41681.4)(net I2S_LRC)(type protect))
+    (wire (path F.Cu 250  110301 -70707.3  110301 -69620  110845 -69620  114417 -66047.6
+            114417 -36596.3)(net I2S_LRC)(type protect))
+    (wire (path F.Cu 300  138133 -48465.1  138133 -37871.4)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  140945 -51277.5  138133 -48465.1)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  125720 -52309.4  128912 -49117.3  137480 -49117.3  138133 -48465.1)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  125720 -52309.4  125720 -52909.6)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  125720 -51709.3  125720 -52309.4)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  138133 -37871.4  140604 -37871.4  141874 -36601.4)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  130857 -36596.3  132132 -37871.4  138133 -37871.4)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  125974 -63901.3  125974 -62851  124520 -61396.7  124520 -53734.7
+            125345 -52909.6  125720 -52909.6)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  125974 -64426.4  125974 -63901.3)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  129657 -36596.3  130857 -36596.3)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  125989 -66299.1  125989 -67349.4)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  121739 -71428  125818 -67349.4  125989 -67349.4)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  105146 -80919.3  106206 -81979.7  111188 -81979.7  121739 -71428
+            132291 -81979.7  133682 -81979.7  137658 -85956  137658 -87523)(net SW_POWER3.3)(type protect))
+    (wire (path F.Cu 300  125974 -64426.4  125974 -64951.6  125989 -64966.6  125989 -66299.1)(net SW_POWER3.3)(type protect))
+    (wire (path B.Cu 300  127117 -36596.3  125917 -36596.3)(net GND)(type protect))
+    (wire (path B.Cu 300  106679 -37494  108805 -35367.8  125061 -35367.8  125917 -36223.3
+            125917 -36596.3)(net GND)(type protect))
+    (wire (path B.Cu 300  106679 -37494  105400 -36215.3)(net GND)(type protect))
+    (wire (path B.Cu 300  105400 -43835.3  106679 -42556.6  106679 -37494)(net GND)(type protect))
+    (wire (path B.Cu 300  127117 -36596.3  128317 -36596.3)(net GND)(type protect))
+    (wire (path B.Cu 300  141874 -39141.4  140552 -37819.9  140552 -35698.9  140250 -35395.9
+            128581 -35395.9  128317 -35659.6  128317 -36596.3)(net GND)(type protect))
+    (wire (path B.Cu 300  144770 -68727.3  144770 -69927.6)(net GND)(type protect))
+    (wire (path B.Cu 300  139045 -82264.7  143570 -77740  143570 -70752.7  144395 -69927.6
+            144770 -69927.6)(net GND)(type protect))
+    (wire (path B.Cu 300  139045 -82264.7  139045 -82739.9)(net GND)(type protect))
+    (wire (path B.Cu 300  139045 -81789.6  139045 -82264.7)(net GND)(type protect))
+    (wire (path B.Cu 300  133161 -91027.3  133161 -89915)(net GND)(type protect))
+    (wire (path B.Cu 300  139045 -82739.9  135339 -86445.9  135339 -88257.6  133682 -89915
+            133161 -89915)(net GND)(type protect))
+    (wire (path F.Cu 300  137658 -100223  137658 -99022.7)(net GND)(type protect))
+    (wire (path F.Cu 300  133161 -91027.3  133161 -92139.6  134273 -92139.6  136007 -93873
+            138090 -93873  138858 -94641.7  138858 -98197.6  138033 -99022.7
+            137658 -99022.7)(net GND)(type protect))
+    (wire (path F.Cu 300  105400 -59551.3  105400 -58601)(net GND)(type protect))
+    (wire (path F.Cu 300  105400 -43835.3  104174 -45061.7  104174 -58184.1  104590 -58601
+            105400 -58601)(net GND)(type protect))
+    (wire (path F.Cu 300  105400 -67171.3  105400 -66221  104568 -66221  104158 -65810.5
+            104158 -61743.6  105400 -60501.6)(net GND)(type protect))
+    (wire (path F.Cu 300  105400 -67171.3  105400 -67646.4)(net GND)(type protect))
+    (wire (path F.Cu 300  105400 -59551.3  105400 -60501.6)(net GND)(type protect))
+    (wire (path F.Cu 300  141874 -39141.4  145797 -43064  145797 -58310.4  144788 -59319.2)(net GND)(type protect))
+    (wire (path F.Cu 300  144770 -68727.3  144770 -67527)(net GND)(type protect))
+    (wire (path F.Cu 300  143485 -59319.2  144788 -59319.2)(net GND)(type protect))
+    (wire (path F.Cu 300  144770 -67527  144788 -67509.2  144788 -59319.2)(net GND)(type protect))
+    (wire (path B.Cu 300  105146 -84919.3  106371 -84919.3)(net GND)(type protect))
+    (wire (path B.Cu 300  110301 -85947.3  110301 -84835)(net GND)(type protect))
+    (wire (path B.Cu 300  106371 -84919.3  106456 -84835  110301 -84835)(net GND)(type protect))
+    (wire (path F.Cu 300  105400 -67646.4  105400 -68121.6)(net GND)(type protect))
+    (wire (path F.Cu 300  105273 -75045.3  105273 -74095)(net GND)(type protect))
+    (wire (path F.Cu 300  105400 -68121.6  106505 -69226.6  106505 -73672.5  106082 -74095
+            105273 -74095)(net GND)(type protect))
+    (wire (path F.Cu 300  105273 -75045.3  105273 -75995.6)(net GND)(type protect))
+    (wire (path F.Cu 300  105146 -84919.3  105146 -83969  104552 -83969  103912 -83329.1
+            103912 -77356.4  105273 -75995.6)(net GND)(type protect))
+    (wire (path B.Cu 300  105400 -67171.3  106625 -67171.3)(net GND)(type protect))
+    (wire (path B.Cu 300  118369 -68686.7  116717 -67034.3  106762 -67034.3  106625 -67171.3)(net GND)(type protect))
+    (wire (path F.Cu 300  130175 -77470  130175 -73660)(net GND)(type protect))
+    (wire (path F.Cu 250  124577 -36596.3  124577 -37771.6)(net HEADPHONE)(type protect))
+    (wire (path F.Cu 250  110301 -80867.3  110301 -79780  111116 -79780  123402 -67494.8
+            123402 -38946.9  124577 -37771.6)(net HEADPHONE)(type protect))
+    (wire (path F.Cu 250  124577 -36596.3  125752 -36596.3  125752 -36229  126570 -35411.6
+            142369 -35411.6  143089 -36131.6  143089 -37075.1  142268 -37896.2
+            141455 -37896.2  140657 -38694.3  140657 -40464.6  141874 -41681.4)(net HEADPHONE)(type protect))
+    (wire (path F.Cu 250  122037 -36596.3  122037 -37771.6)(net "Net-(J4-Pad4)")(type protect))
+    (wire (path F.Cu 250  118354 -63901.3  118354 -41454.6  122037 -37771.6)(net "Net-(J4-Pad4)")(type protect))
+    (wire (path B.Cu 250  105146 -82919.3  105146 -81994)(net NEOPIXEL)(type protect))
+    (wire (path B.Cu 250  110301 -78327.3  110301 -79414.6  108651 -79414.6  106071 -81994
+            105146 -81994)(net NEOPIXEL)(type protect))
+    (wire (path F.Cu 250  110301 -58007.3  110301 -56920)(net ROTENC_BUT)(type protect))
+    (wire (path F.Cu 250  105400 -47835.3  105400 -48760.6  105978 -48760.6  108842 -51623.9
+            108842 -56004.2  109757 -56920  110301 -56920)(net ROTENC_BUT)(type protect))
+    (wire (path F.Cu 250  105400 -49835.3  105400 -50760.6)(net ROTENC_CLK)(type protect))
+    (wire (path F.Cu 250  110301 -63087.3  110301 -62000  109757 -62000  108391 -60633.8
+            108391 -53173.5  105978 -50760.6  105400 -50760.6)(net ROTENC_CLK)(type protect))
+    (wire (path F.Cu 250  105400 -51835.3  105400 -52760.6)(net ROTENC_DT)(type protect))
+    (wire (path F.Cu 250  110301 -65627.3  110301 -64540  109757 -64540  107798 -62580.9
+            107798 -55158.8  105400 -52760.6)(net ROTENC_DT)(type protect))
+    (wire (path B.Cu 250  133161 -58007.3  133161 -59094.6)(net RFID_RST)(type protect))
+    (wire (path B.Cu 250  139045 -67789.6  139045 -66864.3  138467 -66864.3  137127 -65524.7
+            137127 -62517.1  133705 -59094.6  133161 -59094.6)(net RFID_RST)(type protect))
+    (wire (path B.Cu 250  133161 -60547.3  133161 -61634.6)(net RFID_CS)(type protect))
+    (wire (path B.Cu 250  139045 -69789.6  139045 -68864.3  138467 -68864.3  135204 -65601.1
+            135204 -63133.5  133705 -61634.6  133161 -61634.6)(net RFID_CS)(type protect))
+    (wire (path B.Cu 250  133161 -70707.3  134620 -70707.3)(net RFID_MOSI)(type protect))
+    (wire (path B.Cu 250  139045 -71789.6  139045 -70864.3  134777 -70864.3  134620 -70707.3)(net RFID_MOSI)(type protect))
+    (wire (path F.Cu 250  133161 -68167.3  133161 -69254.6)(net RFID_MISO)(type protect))
+    (wire (path F.Cu 250  139045 -73789.6  139045 -72864.3  137858 -72864.3  134248 -69254.6
+            133161 -69254.6)(net RFID_MISO)(type protect))
+    (wire (path F.Cu 250  139045 -75789.6  139045 -74864.3)(net RFID_SCK)(type protect))
+    (wire (path F.Cu 250  133161 -73247.3  133161 -74334.6)(net RFID_SCK)(type protect))
+    (wire (path F.Cu 250  139045 -74864.3  138120 -74864.3  137590 -74334.6  133161 -74334.6)(net RFID_SCK)(type protect))
+    (wire (path B.Cu 250  133161 -83407.3  133161 -82320)(net RFID_BUSY)(type protect))
+    (wire (path B.Cu 250  139045 -77789.6  140263 -79007.4  140263 -80213  139686 -80789.6
+            135779 -80789.6  134248 -82320  133161 -82320)(net RFID_BUSY)(type protect))
+    (wire (path F.Cu 250  105400 -38215.3  105400 -39140.6)(net EN)(type protect))
+    (wire (path F.Cu 250  110301 -50387.3  110301 -49300  109757 -49300  107803 -47345.8
+            107803 -41543.7  105400 -39140.6)(net EN)(type protect))
+    (wire (path B.Cu 250  133161 -85947.3  133161 -84860  132074 -84860  121890 -74676.6
+            106904 -74676.6  105273 -73045.3)(net BUT_NEXT)(type protect))
+    (wire (path B.Cu 250  107083 -56720.6  106253 -57551.3  105400 -57551.3)(net BUT_PREV)(type protect))
+    (wire (path B.Cu 250  110301 -54014.6  109789 -54014.6  107083 -56720.6)(net BUT_PREV)(type protect))
+    (wire (path B.Cu 250  118369 -66299.1  111506 -59436.6  109799 -59436.6  107083 -56720.6)(net BUT_PREV)(type protect))
+    (wire (path B.Cu 250  110301 -52927.3  110301 -54014.6)(net BUT_PREV)(type protect))
+    (wire (path B.Cu 250  133161 -75787.3  128319 -75787.3  120025 -67492.9  118052 -67492.9
+            115069 -64509.9  106061 -64509.9  105400 -65171.3)(net BUT_PPLAY)(type protect))
+    (wire (path F.Cu 250  137658 -97683  136483 -97683)(net MMC_MISO)(type protect))
+    (wire (path F.Cu 250  133161 -93567.3  133161 -94654.6  133675 -94654.6  136483 -97462.6
+            136483 -97683)(net MMC_MISO)(type protect))
+    (wire (path B.Cu 250  137658 -95143  136483 -95143)(net MMC_SCK)(type protect))
+    (wire (path B.Cu 250  110301 -75787.3  111760 -75787.3  130724 -94750.8  130724 -95631.1
+            132291 -97198.7  134427 -97198.7  136483 -95143)(net MMC_SCK)(type protect))
+    (wire (path B.Cu 250  137658 -92603  137658 -93778.3)(net MMC_MOSI)(type protect))
+    (wire (path B.Cu 250  133161 -96107.3  134620 -96107.3  136949 -93778.3  137658 -93778.3)(net MMC_MOSI)(type protect))
+    (wire (path F.Cu 250  144770 -71267.3  144770 -70092)(net TX)(type protect))
+    (wire (path F.Cu 250  133161 -50387.3  133161 -51474.6  133705 -51474.6  135711 -53481.2
+            135711 -55320.4  137063 -56671.9  137063 -60424.3  138167 -61528.8
+            139268 -61528.8  143595 -65855.9  143595 -69724.8  143962 -70092
+            144770 -70092)(net TX)(type protect))
+    (wire (path F.Cu 250  144770 -73807.3  144770 -72632)(net RX)(type protect))
+    (wire (path F.Cu 250  133161 -52927.3  133161 -54014.6  133693 -54014.6  135638 -55960.4
+            135638 -59641.9  138258 -62261.9  139364 -62261.9  142129 -65027.4
+            142129 -70358.6  144403 -72632  144770 -72632)(net RX)(type protect))
+    (wire (path B.Cu 250  138405 -59319.2  137127 -59319.2)(net "Net-(Q1-Pad1)")(type protect))
+    (wire (path B.Cu 250  125989 -68686.7  125989 -67661.4  126117 -67661.4  127014 -66764.4
+            127014 -62244.3  132360 -56898.7  134707 -56898.7  137127 -59319.2)(net "Net-(Q1-Pad1)")(type protect))
+    (wire (path F.Cu 250  125974 -71074.3  125989 -71059.3  125989 -68686.7)(net "Net-(Q1-Pad1)")(type protect))
+    (wire (path F.Cu 250  140945 -59319.2  140945 -57993.9)(net "Net-(Q1-Pad2)")(type protect))
+    (wire (path F.Cu 250  137119 -54295  140818 -57993.9  140945 -57993.9)(net "Net-(Q1-Pad2)")(type protect))
+    (wire (path F.Cu 250  137119 -54295  138405 -53009  138405 -51277.5)(net "Net-(Q1-Pad2)")(type protect))
+    (wire (path F.Cu 250  124704 -93111.3  124704 -90571.3)(net VBAT)(type protect))
+    (wire (path B.Cu 250  110301 -60547.3  108200 -60547.3  104034 -64713.3  104034 -75427.4
+            105664 -77057.3  111190 -77057.3  124704 -90571.3)(net VBAT)(type protect))
+    (wire (path B.Cu 250  133161 -80867.3  130354 -80867.3  120561 -71074.3  118354 -71074.3)(net "Net-(R4-Pad2)")(type protect))
+    (wire (path F.Cu 250  125720 -54249.3  126895 -54249.3  131923 -59277.3  134533 -59277.3
+            139045 -63789.6)(net "Net-(J7-Pad1)")(type protect))
+    (wire (path F.Cu 250  139045 -65789.6  139045 -63789.6)(net "Net-(J7-Pad1)")(type protect))
+    (wire (path B.Cu 250  110301 -55467.3  111760 -55467.3)(net RFID_IRQ)(type protect))
+    (wire (path B.Cu 250  139045 -79789.6  139045 -78864.3  138467 -78864.3  135293 -75690.4
+            135293 -73442.9  133827 -71977.3  130208 -71977.3  128104 -69873
+            125672 -69873  122164 -66364.6  122164 -65871.1  111760 -55467.3)(net RFID_IRQ)(type protect))
+    (wire (path B.Cu 300  126195 -56789.3  117253 -47847.3  110301 -47847.3)(net +3V3)(type protect))
+    (wire (path B.Cu 300  126195 -56789.3  126920 -56789.3)(net +3V3)(type protect))
+    (wire (path B.Cu 300  125720 -56789.3  126195 -56789.3)(net +3V3)(type protect))
+    (wire (path B.Cu 300  133161 -55467.3  128242 -55467.3  126920 -56789.3)(net +3V3)(type protect))
+    (wire (path B.Cu 300  143689 -54295  142516 -55467.3  133161 -55467.3)(net +3V3)(type protect))
+    (wire (path F.Cu 300  143485 -51277.5  143485 -52627.8)(net +3V3)(type protect))
+    (wire (path F.Cu 300  144739 -54295  144739 -53244.7  144122 -52627.8  143485 -52627.8)(net +3V3)(type protect))
+    (wire (path B.Cu 300  110301 -47847.3  110301 -46735)(net +3V3)(type protect))
+    (wire (path B.Cu 300  105400 -45835.3  105400 -46785.6)(net +3V3)(type protect))
+    (wire (path B.Cu 300  110301 -46735  109468 -46735  109418 -46785.6  105400 -46785.6)(net +3V3)(type protect))
+    (wire (path B.Cu 300  144739 -54295  143689 -54295)(net +3V3)(type protect))
+    (via "Via[0-1]_800:400_um"  120650 -55245 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  136525 -44450 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  133350 -36195 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  115570 -53975 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  126365 -59690 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  130175 -77470 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  130175 -64770 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  129540 -73660 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  121285 -49530 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  130175 -52070 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  125730 -48895 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  113665 -52705 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  120650 -66040 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  136525 -79375 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  115570 -60960 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  106680 -63500 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  107315 -53340 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  124460 -62865 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  135600 -51200 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  138200 -56900 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  136000 -40400 (net GND)(type protect))
   )
 )

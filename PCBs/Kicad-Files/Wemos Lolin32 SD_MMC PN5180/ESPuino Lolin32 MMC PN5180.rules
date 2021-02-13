@@ -1,5 +1,5 @@
 
-(rules PCB Tonuino Lolin32 MMC PN5180
+(rules PCB ESPuino Lolin32 MMC PN5180
   (snap_angle 
     fortyfive_degree
   )
