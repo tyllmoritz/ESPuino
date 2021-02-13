@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.8-0-10_14)")
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5+dfsg1-2build2)
 
   (general
     (thickness 1.6)
@@ -985,7 +985,7 @@
   (gr_text GAIN (at 147.33524 53.00726 90) (layer F.SilkS)
     (effects (font (size 0.762 0.762) (thickness 0.0635)))
   )
-  (gr_text "Tonuino ESP-32 I2S V0.1\nCC-BY-SA mariolukas.de " (at 201.93 83.82 90) (layer F.SilkS)
+  (gr_text "ESPuino V0.1\nCC-BY-SA mariolukas.de " (at 201.93 83.82 90) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
   (gr_text CS (at 177.8762 64.52616 90) (layer F.SilkS)
