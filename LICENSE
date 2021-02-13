@@ -678,3 +678,5 @@ The following exceptions apply:
 
     PCBs/kicad-library/ESPuino: all files in this directory are imported or modified from KiCad or created to be used with Kicad, therefore the license at https://kicad.org/libraries/license/ applies.
 
+    PCBs/kicad-library/SnapEDA: all files in this directory are imported or modified from SnapEDA symbols and footprints, therefore the license at https://www.snapeda.com/about/FAQ/#license applies.
+
