@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# LolinD32-symbols
+# LolinD32
 #
-DEF LolinD32-symbols M 0 40 Y Y 1 F N
+DEF LolinD32 M 0 40 Y Y 1 F N
 F0 "M" -100 -50 50 H V C CNN
-F1 "LolinD32-symbols" -100 50 50 H V C CNN
+F1 "LolinD32" -100 50 50 H V C CNN
 F2 "" -150 -250 50 H I C CNN
 F3 "" -150 -250 50 H I C CNN
 DRAW

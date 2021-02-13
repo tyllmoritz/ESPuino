@@ -1,9 +1,9 @@
-(pcb "/Users/torsten/Documents/KiCad/Tonuino D32/Tonuino D32/Tonuino D32.dsn"
+(pcb "/home/work/git/ESPuino/PCBs/Kicad-Files/Wemos Lolin D32/ESPuino D32.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "(5.1.8-0-10_14)")
+    (host_version "5.1.5+dfsg1-2build2")
   )
   (resolution um 10)
   (unit um)
@@ -21,13 +21,17 @@
       )
     )
     (boundary
-      (path pcb 0  162553 -100978  100946 -100978  100946 -15087.5  162553 -15087.5
-            162553 -100978)
+      (path pcb 0  154940 -100330  101600 -100330  101600 -19050  154940 -19050
+            154940 -100330)
     )
     (plane GND (polygon F.Cu 0  154940 -100330  101600 -100330  101600 -19050  154940 -19050
             154940 -100330))
     (plane GND (polygon B.Cu 0  154940 -100330  101600 -100330  101600 -19050  154940 -19050
             154940 -100330))
+    (keepout "" (polygon F.Cu 0  141605 -45720  116205 -45720  116205 -40640  141605 -40640
+            141605 -45720))
+    (keepout "" (polygon B.Cu 0  141605 -45720  116205 -45720  116205 -40640  141605 -40640
+            141605 -45720))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -806,5 +810,109 @@
     )
   )
   (wiring
+    (wire (path B.Cu 250  129792 -43180  146812 -43180)(net I2S_LRC)(type protect))
+    (wire (path B.Cu 250  123547 -36568  123547 -36935.3  129792 -43180)(net I2S_LRC)(type protect))
+    (wire (path B.Cu 250  117252 -66308  121287 -62273  121287 -58392.9  129792 -49887.9
+            129792 -43180)(net I2S_LRC)(type protect))
+    (wire (path B.Cu 250  122372 -36568  123547 -36568)(net I2S_LRC)(type protect))
+    (wire (path F.Cu 250  124912 -36568  126087 -36568  126087 -36200.7  126903 -35385
+            127985 -35385  128661 -36060.9  128661 -46048.2  126807 -47901.9
+            126807 -59293.1  117252 -68848)(net I2S_BCLK)(type protect))
+    (wire (path B.Cu 250  124912 -36568  126087 -36568  126087 -36935.3  129792 -40640
+            146812 -40640)(net I2S_BCLK)(type protect))
+    (wire (path F.Cu 250  127452 -36568  127452 -37743.3  126277 -38918.6  126277 -57739.9
+            120249 -63768  117252 -63768)(net DIN)(type protect))
+    (wire (path B.Cu 250  127452 -36568  128627 -36568  128627 -36935.3  129792 -38100
+            146812 -38100)(net DIN)(type protect))
+    (wire (path F.Cu 250  129992 -36568  129992 -46048  134162 -50218)(net "Net-(J1-Pad4)")(type protect))
+    (wire (path F.Cu 250  132532 -36568  133707 -36568  133707 -36200.7  134515 -35392.6
+            138629 -35392.6  138790 -35553.5  138790 -41465.9  138724 -41531.5
+            138724 -49680  140112 -51068)(net Headphone)(type protect))
+    (wire (path B.Cu 250  140112 -51068  141464 -51068  149352 -43180)(net Headphone)(type protect))
+    (wire (path B.Cu 300  114935 -75565  114935 -80010  114935 -80010)(net GND)(type protect))
+    (wire (path F.Cu 300  135072 -38918  134620 -39370)(net GND)(type protect))
+    (wire (path F.Cu 300  135072 -36568  135072 -38918)(net GND)(type protect))
+    (wire (path F.Cu 300  144145 -38718.5  144145 -41910)(net GND)(type protect))
+    (wire (path F.Cu 300  145963 -36900  144145 -38718.5)(net GND)(type protect))
+    (wire (path F.Cu 300  149928 -36900  145963 -36900)(net GND)(type protect))
+    (wire (path F.Cu 300  150552 -37524  149928 -36900)(net GND)(type protect))
+    (wire (path F.Cu 300  150552 -39440  150552 -37524)(net GND)(type protect))
+    (wire (path F.Cu 300  149352 -40640  150552 -39440)(net GND)(type protect))
+    (wire (path B.Cu 300  128905 -48260  125095 -48260  124460 -47625)(net GND)(type protect))
+    (wire (path F.Cu 300  112966 -25813  111347 -25813)(net GND)(type protect))
+    (wire (path F.Cu 300  106582 -30578  106582 -34218)(net GND)(type protect))
+    (wire (path F.Cu 300  111347 -25813  106582 -30578)(net GND)(type protect))
+    (wire (path B.Cu 250  137612 -36568  136437 -36568)(net SW_Power3.3)(type protect))
+    (wire (path B.Cu 250  109202 -42468  116277 -35392.7  135629 -35392.7  136437 -36200.6
+            136437 -36568)(net SW_Power3.3)(type protect))
+    (wire (path F.Cu 250  134162 -57838  134162 -56812.7)(net SW_Power3.3)(type protect))
+    (wire (path F.Cu 250  137612 -36568  137612 -53362.7  134162 -56812.7)(net SW_Power3.3)(type protect))
+    (wire (path F.Cu 250  145412 -53500  145412 -52574.7  148082 -49904.7  148082 -39370
+            149352 -38100)(net SW_Power3.3)(type protect))
+    (wire (path F.Cu 250  111412 -65968  111412 -65042.7)(net SW_Power3.3)(type protect))
+    (wire (path F.Cu 250  109202 -42468  109202 -63411  110834 -65042.7  111412 -65042.7)(net SW_Power3.3)(type protect))
+    (wire (path B.Cu 250  137612 -36568  147820 -36568  149352 -38100)(net SW_Power3.3)(type protect))
+    (wire (path F.Cu 250  111412 -65968  111412 -66893.3)(net SW_Power3.3)(type protect))
+    (wire (path F.Cu 250  112162 -84418  112162 -83242.7  111795 -83242.7  110987 -82434.6
+            110987 -67318.7  111412 -66893.3)(net SW_Power3.3)(type protect))
+    (wire (path F.Cu 250  117252 -73928  113638 -70314.5  113638 -66194.5  111412 -63968)(net NEO_DO)(type protect))
+    (wire (path F.Cu 300  111742 -42468  113045 -42468)(net +3V3)(type protect))
+    (wire (path F.Cu 300  115132 -45857.6  112222 -48767.7  111412 -48767.7)(net +3V3)(type protect))
+    (wire (path F.Cu 300  117252 -45988  117122 -45857.6  115132 -45857.6)(net +3V3)(type protect))
+    (wire (path F.Cu 300  113045 -42468  113045 -43770.8  115132 -45857.6)(net +3V3)(type protect))
+    (wire (path F.Cu 300  111412 -49718  111412 -48767.7)(net +3V3)(type protect))
+    (wire (path F.Cu 300  124662 -57838  124662 -53398  117252 -45988)(net +3V3)(type protect))
+    (wire (path F.Cu 250  111412 -51718  111412 -52643.3)(net ROTENC_BUT)(type protect))
+    (wire (path F.Cu 250  117252 -58688  114132 -55567.7  114132 -54784.7  111990 -52643.3
+            111412 -52643.3)(net ROTENC_BUT)(type protect))
+    (wire (path B.Cu 250  117252 -56148  114822 -53718  111412 -53718)(net ROTENC_CLK)(type protect))
+    (wire (path B.Cu 250  111412 -55718  111412 -56643.3)(net ROTENC_DT)(type protect))
+    (wire (path B.Cu 250  117252 -61228  115997 -61228  111412 -56643.3)(net ROTENC_DT)(type protect))
+    (wire (path B.Cu 250  140112 -73928  145542 -79358  145542 -79400.4)(net BUT_NEXT)(type protect))
+    (wire (path F.Cu 250  145412 -63500  140600 -58688  140112 -58688)(net CS_RFID)(type protect))
+    (wire (path B.Cu 250  145412 -61500  145412 -62425.3)(net SCK_RFID)(type protect))
+    (wire (path B.Cu 250  140112 -63768  141455 -62425.3  145412 -62425.3)(net SCK_RFID)(type protect))
+    (wire (path F.Cu 250  145412 -59500  145412 -58574.7)(net MOSI_RFID)(type protect))
+    (wire (path F.Cu 250  140112 -48528  143026 -51441.6  143026 -56766.6  144834 -58574.7
+            145412 -58574.7)(net MOSI_RFID)(type protect))
+    (wire (path B.Cu 250  140112 -61228  143840 -57500  145412 -57500)(net MISO_RFID)(type protect))
+    (wire (path B.Cu 250  140112 -79008  143593 -82488.6  143593 -85426.6  145542 -87376)(net BUT_PREV)(type protect))
+    (wire (path B.Cu 250  140112 -66308  145254 -71450.2  145390 -71450.2)(net BUT_PPLAY)(type protect))
+    (wire (path B.Cu 250  112162 -74258  112162 -75433.3  111795 -75433.3  110968 -76260.5
+            110968 -79824  111817 -80673.2  112643 -80673.2  114318 -82348.8
+            114318 -83037.1  116730 -85448.7  126051 -85448.7  140112 -71388)(net MISO_SD)(type protect))
+    (wire (path B.Cu 250  112162 -76798  117252 -71708  117252 -71388)(net SCK_SD)(type protect))
+    (wire (path F.Cu 250  112162 -79338  113337 -79338  116207 -76468  117252 -76468)(net MOSI_SD)(type protect))
+    (wire (path F.Cu 250  112162 -81878  113337 -81878  113337 -82098.4  116686 -85447.4
+            136213 -85447.4  140112 -81548)(net CS_SD)(type protect))
+    (wire (path B.Cu 250  127912 -57838  128937 -57838  139947 -68848  140112 -68848)(net "Net-(M1-Pad23)")(type protect))
+    (wire (path F.Cu 250  109122 -34218  109122 -40008  106662 -42468)(net "Net-(Q1-Pad1)")(type protect))
+    (wire (path B.Cu 250  124662 -50218  118513 -44069.2  108263 -44069.2  106662 -42468)(net "Net-(Q1-Pad1)")(type protect))
+    (wire (path B.Cu 250  127912 -50218  126845 -51285.4  124278 -51285.4  120336 -47342.5
+            120336 -47166.3  117823 -44653.4  106375 -44653.4  105384 -43662.7
+            105384 -40495.9  111662 -34218)(net "Net-(Q2-Pad1)")(type protect))
+    (wire (path F.Cu 250  127912 -50218  130912 -53218  130912 -57838)(net "Net-(Q2-Pad1)")(type protect))
+    (wire (path F.Cu 250  117252 -79008  132762 -63497.9  132762 -53724.1  135234 -51252.7
+            135234 -43045.3  131255 -39066.6  131255 -36117.9  122950 -27813
+            112966 -27813)(net EN)(type protect))
+    (via "Via[0-1]_800:400_um"  117790 -39550 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  132080 -70485 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  134620 -81915 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  123190 -64770 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  137160 -59055 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  136525 -48260 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  133985 -46990 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  114300 -50165 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  123190 -59055 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  120650 -54610 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  113665 -57785 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  144145 -41910 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  142875 -39370 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  134620 -39370 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  114935 -75565 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  114935 -80010 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  128905 -48260 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  124460 -46990 (net GND)(type protect))
+    (via "Via[0-1]_800:400_um"  142240 -54610 (net GND)(type protect))
   )
 )

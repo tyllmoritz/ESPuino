@@ -258,26 +258,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Mechanical_MountingHole
+# ESPuino-D32-rescue_LolinD32
 #
-DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
-F0 "H" 0 200 50 H V C CNN
-F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
-ENDDRAW
-ENDDEF
-#
-# Tonuino-D32-rescue_LolinD32-symbols
-#
-DEF Tonuino-D32-rescue_LolinD32-symbols M 0 40 Y Y 1 F N
+DEF ESPuino-D32-rescue_LolinD32 M 0 40 Y Y 1 F N
 F0 "M" -100 -50 50 H V C CNN
-F1 "Tonuino-D32-rescue_LolinD32-symbols" -100 50 50 H V C CNN
+F1 "ESPuino-D32-rescue_LolinD32" -100 50 50 H V C CNN
 F2 "" -150 -250 50 H I C CNN
 F3 "" -150 -250 50 H I C CNN
 DRAW
@@ -317,6 +302,21 @@ X 25 9 50 350 100 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
 # Transistor_FET_IRF540N
 #
 DEF Transistor_FET_IRF540N Q 0 20 Y N 1 F N
@@ -324,7 +324,7 @@ F0 "Q" 250 75 50 H V L CNN
 F1 "Transistor_FET_IRF540N" 250 0 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-220-3_Vertical" 250 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
-ALIAS IRF3205 IRF540N IRF740 IRLB8721PBF IRLZ34N IRLZ44N VNP10N07 IPP060N06N
+ALIAS IRF3205 IRF540N IRF740 IRLB8721PBF IRLZ34N IRLZ44N
 $FPLIST
  TO?220*
 $ENDFPLIST

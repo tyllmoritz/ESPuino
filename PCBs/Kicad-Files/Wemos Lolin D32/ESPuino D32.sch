@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Tonuino-D32-rescue:LolinD32-symbols M1
+L ESPuino-D32-rescue:LolinD32 M1
 U 1 1 5FCC05A7
 P 5850 3750
 F 0 "M1" V 6815 3750 50  0000 C CNN
