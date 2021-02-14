@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name ESPuino-rescue)(type Legacy)(uri ${KIPRJMOD}/ESPuino-rescue.lib)(options "")(descr ""))
+  (lib (name ESPuino_snapEDA)(type Legacy)(uri ${KIPRJMOD}/../../kicad-library/SnapEDA/symbols.lib)(options "")(descr ""))
+  (lib (name ESPuino)(type Legacy)(uri ${KIPRJMOD}/../../kicad-library/ESPuino/symbols.lib)(options "")(descr ""))
 )

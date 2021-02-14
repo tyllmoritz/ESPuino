@@ -1,4 +1,4 @@
-16920993267518454
+16920993381758796
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -46087,7 +46087,7 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
-ESP32_Breakout_Carrier
+ESPuino_snapEDA
 MODULE_ESP32-DEVKITC-32U
 
 
