@@ -246,7 +246,7 @@ uint8_t currentVolume = initVolume;
 ////////////
 
 // AP-WiFi
-static const char accessPointNetworkSSID[] PROGMEM = "Tonuino";     // Access-point's SSID
+static const char accessPointNetworkSSID[] PROGMEM = "ESPuino";     // Access-point's SSID
 IPAddress apIP(192, 168, 4, 1);                         // Access-point's static IP
 IPAddress apNetmask(255, 255, 255, 0);                  // Access-point's netmask
 bool accessPointStarted = false;
@@ -257,25 +257,25 @@ char mqtt_server[16] = "192.168.2.43";                  // IP-address of MQTT-se
 char mqttUser[16] = "mqtt-user";                        // MQTT-user
 char mqttPassword[16] = "mqtt-password";                // MQTT-password
 #ifdef MQTT_ENABLE
-    #define DEVICE_HOSTNAME "ESP32-Tonuino"                 // Name that that is used for MQTT
-    static const char topicSleepCmnd[] PROGMEM = "Cmnd/Tonuino/Sleep";
-    static const char topicSleepState[] PROGMEM = "State/Tonuino/Sleep";
-    static const char topicTrackCmnd[] PROGMEM = "Cmnd/Tonuino/Track";
-    static const char topicTrackState[] PROGMEM = "State/Tonuino/Track";
-    static const char topicTrackControlCmnd[] PROGMEM = "Cmnd/Tonuino/TrackControl";
-    static const char topicLoudnessCmnd[] PROGMEM = "Cmnd/Tonuino/Loudness";
-    static const char topicLoudnessState[] PROGMEM = "State/Tonuino/Loudness";
-    static const char topicSleepTimerCmnd[] PROGMEM = "Cmnd/Tonuino/SleepTimer";
-    static const char topicSleepTimerState[] PROGMEM = "State/Tonuino/SleepTimer";
-    static const char topicState[] PROGMEM = "State/Tonuino/State";
-    static const char topicCurrentIPv4IP[] PROGMEM = "State/Tonuino/IPv4";
-    static const char topicLockControlsCmnd[] PROGMEM ="Cmnd/Tonuino/LockControls";
-    static const char topicLockControlsState[] PROGMEM ="State/Tonuino/LockControls";
-    static const char topicPlaymodeState[] PROGMEM = "State/Tonuino/Playmode";
-    static const char topicRepeatModeCmnd[] PROGMEM = "Cmnd/Tonuino/RepeatMode";
-    static const char topicRepeatModeState[] PROGMEM = "State/Tonuino/RepeatMode";
-    static const char topicLedBrightnessCmnd[] PROGMEM = "Cmnd/Tonuino/LedBrightness";
-    static const char topicLedBrightnessState[] PROGMEM = "State/Tonuino/LedBrightness";
+    #define DEVICE_HOSTNAME "ESPuino"                 // Name that that is used for MQTT
+    static const char topicSleepCmnd[] PROGMEM = "Cmnd/ESPuino/Sleep";
+    static const char topicSleepState[] PROGMEM = "State/ESPuino/Sleep";
+    static const char topicTrackCmnd[] PROGMEM = "Cmnd/ESPuino/Track";
+    static const char topicTrackState[] PROGMEM = "State/ESPuino/Track";
+    static const char topicTrackControlCmnd[] PROGMEM = "Cmnd/ESPuino/TrackControl";
+    static const char topicLoudnessCmnd[] PROGMEM = "Cmnd/ESPuino/Loudness";
+    static const char topicLoudnessState[] PROGMEM = "State/ESPuino/Loudness";
+    static const char topicSleepTimerCmnd[] PROGMEM = "Cmnd/ESPuino/SleepTimer";
+    static const char topicSleepTimerState[] PROGMEM = "State/ESPuino/SleepTimer";
+    static const char topicState[] PROGMEM = "State/ESPuino/State";
+    static const char topicCurrentIPv4IP[] PROGMEM = "State/ESPuino/IPv4";
+    static const char topicLockControlsCmnd[] PROGMEM ="Cmnd/ESPuino/LockControls";
+    static const char topicLockControlsState[] PROGMEM ="State/ESPuino/LockControls";
+    static const char topicPlaymodeState[] PROGMEM = "State/ESPuino/Playmode";
+    static const char topicRepeatModeCmnd[] PROGMEM = "Cmnd/ESPuino/RepeatMode";
+    static const char topicRepeatModeState[] PROGMEM = "State/ESPuino/RepeatMode";
+    static const char topicLedBrightnessCmnd[] PROGMEM = "Cmnd/ESPuino/LedBrightness";
+    static const char topicLedBrightnessState[] PROGMEM = "State/ESPuino/LedBrightness";
 #endif
 
 char stringDelimiter[] = "#";                               // Character used to encapsulate data in linear NVS-strings (don't change)
@@ -290,7 +290,7 @@ AsyncWebSocket ws("/ws");
 AsyncEventSource events("/events");
 
 static const char backupRecoveryWebsite[] PROGMEM = "<p>Das Backup-File wird eingespielt...<br />Zur letzten Seite <a href=\"javascript:history.back()\">zur&uuml;ckkehren</a>.</p>";
-static const char restartWebsite[] PROGMEM = "<p>Der Tonuino wird neu gestartet...<br />Zur letzten Seite <a href=\"javascript:history.back()\">zur&uuml;ckkehren</a>.</p>";
+static const char restartWebsite[] PROGMEM = "<p>Der ESPuino wird neu gestartet...<br />Zur letzten Seite <a href=\"javascript:history.back()\">zur&uuml;ckkehren</a>.</p>";
 
 
 // Audio/mp3

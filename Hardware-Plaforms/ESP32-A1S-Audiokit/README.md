@@ -1,6 +1,6 @@
-# Tonuino based on ESP32-A1S Audio-Development-Kit
+# ESPuino based on ESP32-A1S Audio-Development-Kit
 
-AI-Tinker released (almost two years ago or so) a development-board that contains an ESP32-A1S, which means a DAC is already included upfront. It's sorta ready to use but in the end, to make it compatible with my Tonuino-fork, there's some work waiting.
+AI-Tinker released (almost two years ago or so) a development-board that contains an ESP32-A1S, which means a DAC is already included upfront. It's sorta ready to use but in the end, to make it compatible with ESPuino, there's some work waiting.
 
 ## Things to know
 * As there's a lack of GPIOs, it's necessary to share a single SPI-instance by SD and RFID.
